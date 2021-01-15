@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+    Author: David Jule October 2020.
+
+    HTML form used to create a webpage that generates fortune cookies.
+
+    Assignment 1 : PHP & JavaScript.
+
+    Prof. Matthew Collier.
+
+    Student Number: 000792459.
+-->
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: auto;
+            background-color: #0081AF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .infoBlock{
+            background-color: #F7CE5B;
+            border-style: solid;
+            border-color: #00ABE7;
+            width: 75vw;
+            height: 90vh;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="infoBlock">
+        <h1>Welcome to the fortune cookies!</h1>
+        <div>
+            Please fill in the following information to start creating your cookies!:
+
+            <form method="GET" action="cookiesProcess.php">
+                <div>
+                    <input type="text" name = "name" placeholder="Enter your name:" required >
+                    <input type="number" name="numberOfCookies" placeholder="Amout"  min="1" max="15" required>
+                </div>
+                
+                <div>
+                    <h3>Choose your lucky Number</h3>
+                    <input type="number" name="luckyNumberMin" placeholder="min" required>
+                    <input type="number" name="luckyNumberMax" placeholder="max" required>
+                </div>
+                
+                <div>
+                    <h3>Choose a color for your cookies:</h3>
+                    <input type="color" name="colour" placeholder="Colour of cookies" required>
+
+                </div>
+                <input type="submit" value="Enter">
+                
+            </form>
+    </section>    
+    </div>
+</body>
+
+</html>
